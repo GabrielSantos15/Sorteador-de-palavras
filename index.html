@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pictionary</h1>
+        <section id="sectionSelect">
+            <h2>Raffler</h2>
+            <select name="selectCard" id="selectCard">
+                <option value="sentence">Sentence</option>
+                <option value="person">Person</option>
+                <option value="action">Action</option>
+                <option value="object">Object</option>
+            </select>
+        </section>
+
+    </header>
+    <main>
+        <button id="btn">Play</button>
+        <section id="sectionCard">
+            <article id="outSuj" class="card">
+                <output></output>
+            </article>
+            <article id="outAcao" class="card">
+                <output></output>
+            </article>
+            <article id="outObj" class="card">
+                <output></output>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="js/index.js"></script>
+
+</html>

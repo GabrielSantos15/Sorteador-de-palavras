@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Norican&family=Poppins:wght@500;800&display=swap');
+:root{
+    --corTema : #f00;
+    --corCard : #21118C;
+    --corFundo : #030226;
+    --font:'Poppins', sans-serif;
+}
+body{
+    background-color: var(--corFundo);
+    padding: 15px;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: var(--font);
+    font-family: 'Norican', cursive;
+}
+#sectionSelect{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    padding: 0;
+    font-family: var(--font);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sectionCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 15px;
+}
+.card{
+    background-color: var(--corCard);
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+
+    display: none;
+    place-items: center;
+}
+output{
+    display: inline-block;
+
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+}
+#btn{
+    display: block;
+    all: unset;
+
+    font-size: 2rem;
+    background-color: #F23869;
+    font-family: var(--font);
+
+    margin: 15px;
+
+    padding: 5px;
+    border-radius: 25px;
+
+    transition: .1s;
+}
+#btn:active{
+    box-shadow: 0px 0px 10px #F23869;
+    color: white;
+}
+select{
+    border: none;
+    outline: none;
+
+    padding: 10px;
+    color: #f5f5f5;
+
+    border-radius: 5px;
+    background-color: #110559;
+}
+
+@media screen and (min-width: 600px) {
+    #sectionCard{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
